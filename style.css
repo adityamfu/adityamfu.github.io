@@ -1,4 +1,10 @@
 body, html{
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   font-family: 'Open Sans', sans-serif;
   color: #000200;
 }
@@ -22,7 +28,7 @@ h1{
 }
 header > h1{
   display: inline-flexbox;
-  box-shadow: black 2px 2px 2px 1px;
+  box-shadow: black 4px 5px 1px 2px;
   font-size: 3em;
   border-radius: 5.7em;
   background-color: aliceblue;
@@ -34,6 +40,8 @@ header > h1{
 body{
   background: url(/daru.jpeg) no-repeat center fixed;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 main{
   position: relative;
@@ -52,7 +60,7 @@ ul > li{
   backdrop-filter: blur(10px) saturate(200%) contrast(180%);
   -webkit-backdrop-filter: blur(10px) saturate(200%) contrast(180%); 
   border-radius: 0.6em;
-  box-shadow: black 8px 2px 9px 1px;
+  box-shadow: black 4px 5px 1px 2px;
   margin: 1.6em;
   padding: 0.5em;
   font-size: 3em;
