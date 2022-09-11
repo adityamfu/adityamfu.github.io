@@ -1,10 +1,6 @@
 body, html{
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
   font-family: 'Open Sans', sans-serif;
   color: #000200;
 }
@@ -39,8 +35,9 @@ header > h1{
   
 body{
   max-width:2000%;
-  background: url(/daru.jpeg);
+  background: url(/daru.jpeg) center fixed;
   background-size: cover;
+  background-position:unset;
 }
 main{
   position: relative;
