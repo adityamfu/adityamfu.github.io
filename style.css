@@ -38,10 +38,9 @@ header > h1{
 }
   
 body{
-  background: url(/daru.jpeg) no-repeat center fixed;
+  max-width:2000%;
+  background: url(/daru.jpeg);
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 main{
   position: relative;
