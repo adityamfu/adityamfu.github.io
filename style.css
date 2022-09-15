@@ -26,8 +26,8 @@ main {
 
 main.animated {
   opacity: 0;
-  filter: blur(10px);
-  transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+  filter: blur(4px);
+  transition: opacity 1.4s ease-in-out, filter 1s ease-in-out;
 }
 
 header {
@@ -46,7 +46,7 @@ header > img {
   box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
 }
 
-header > h1 {
+header > a > h1 {
   display: inline-block;
   font-size: 0.8em;
   font-weight: bold;
