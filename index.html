@@ -1,54 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta  charset="utf-8"/> 
-        <title>Aditya Muhammad</title>
-        <link rel="stylesheet" href="style.css" />
-        <script>
-            setTimeout(()=>{
-            const main = document.querySelector('main')
-            main.style.opacity = 2
-            main.style.filter = 1
-            },1000)
-        </script>
-    </head>
-    <body>
-        <main>
-        <header>
-            <img src="ffd.jpeg"/>
-            <h1>
-                <a href="https://www.instagram.com/adityamfu/?hl=id" style="font-size:60px;">@adityamfu</a>
-            </h1>
-        </header>
-            <ul>
-                <li>
-                    <a href="https://github.com/adityamfu">
-                    <img src="git.png" alt="GitHub"width="60" />
-                    GitHub</a>
-                </li>
-                <li>
-                    <a href="https://open.spotify.com/user/47a0ehmw8xj23qgchfukh3k8z?si=QMvEtRpUTrCDSyIyd-6PXQ&utm_source=copy-link&nd=1">
-                    <img src="sptf.png" alt="Spotify" width="60"/>
-                    Spotify</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/afgdhkilxt">
-                    <img src="twitter-icon-83.png" alt="Twitter" width="60" />
-                    Twitter</a>
-                </li>
-                <li>
-                    <a href="https://">
-                    <img src="cmngsn.png" alt="Twitter" width="60" />
-                    Coming Soon</a>
-                </li>
-                <li>
-                    <a href="https://adityamfu.github.io/portfolio.github.io/" style="text-align: center;">
-                    Follow this link to visit my portfolio</a>
-                </li>
-            </ul>
-        </main>
-        <footer class="text-white text-center p-2">
-            <p>Made By <a href="https://adityamfu.github.io/portfolio.github.io/" class="fw-bold" style="text-decoration:none; color:aqua;">Adityamfu</a></p>
-        </footer>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Adityamfu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="daru.jpeg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        VANTA.BIRDS({
+          el: '#vanta',
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: true,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundAlpha: 0.0,
+          color2: 0xff00f0,
+          wingSpan: 40.0,
+          separation: 100.0,
+          alignment: 77.0,
+          cohesion: 5.0,
+          quantity: 1.0,
+        });
+
+        setTimeout(() => {
+          const main = document.querySelector('main');
+          main.style.opacity = 1;
+          main.style.filter = 'blur(0px)';
+        }, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <main class="animated">
+      <header>
+        <img src="ffd.jpeg" />
+        <h1>@adityamfu</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://github.com/adityamfu">
+            <img src="git.png" alt="GitHub" width="20" />
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://open.spotify.com/user/47a0ehmw8xj23qgchfukh3k8z?si=QMvEtRpUTrCDSyIyd-6PXQ&utm_source=copy-link&nd=1">
+            <img src="sptf.png" alt="Spotify" width="20" />
+            Spotify
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/afgdhkilxt">
+            <img src="twitter-icon-83.png" alt="Twitter" width="20" />
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fiverr.com/adityamfu?up_rollout=true">
+            <img src="fiverr.png" alt="Fiverr" width="30" />
+            Fiverr
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/aditya-muhammad-99b407250/">
+            <img src="linkedin.png" alt="LinkedIn" width="20b" />
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="cmngsn.png" width="20" />
+            Coming Soon
+          </a>
+        </li>
+        <li>
+          <a href="https://adityamfu.github.io/portfolio.github.io/" style="text-align: center"> Follow this link to visit my Portfolio Website </a>
+        </li>
+      </ul>
+    </main>
+    <footer>Made By <a href="https://adityamfu.github.io/portfolio.github.io/" style="text-decoration: none; color: aqua">Adityamfu</a></footer>
+  </body>
 </html>
